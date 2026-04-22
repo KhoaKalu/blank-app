@@ -1,1 +1,5 @@
-streamlit
+pandas<3.0
+pdfplumber
+openpyxl
+streamlit>=1.30
+altair>=5,<7

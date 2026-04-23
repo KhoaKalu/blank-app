@@ -128,7 +128,7 @@ def parse_4ps_po(pdf):
 # 3. HÀM BÓC TÁCH AVOLTA (REGEX + CLEAN NAME)
 # ==========================================
 def parse_avolta_po(pdf):
-    st.write("  >  Đang xử lý...")
+    st.write("  > Nhận diện: Mẫu PO Avolta (SĐT 0903613502). Đang xử lý...")
     items_list = []
 
     page1 = pdf.pages[0]
@@ -244,7 +244,7 @@ def create_hybrid_excel(standard_df, unrecognized_files_list):
 # ==========================================
 st.set_page_config(page_title="Công cụ tổng hợp PO", layout="wide")
 st.title("🚀 Công cụ trích xuất dữ liệu PO sang Excel")
-st.markdown("Đã tích hợp làm sạch tên sản phẩm.")
+st.markdown("Hỗ trợ: 4PS & Avolta (SĐT 0903613502). Đã tích hợp làm sạch tên sản phẩm.")
 
 uploaded_files = st.file_uploader("Tải file PDF lên:", type="pdf", accept_multiple_files=True)
 
